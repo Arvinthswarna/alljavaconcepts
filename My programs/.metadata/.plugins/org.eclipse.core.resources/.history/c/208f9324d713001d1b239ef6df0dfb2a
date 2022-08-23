@@ -1,0 +1,11 @@
+package encapsulation;
+
+public class TestEncap {
+	public static void main(String[] args) {
+		User userobj = new User();
+		userobj.setEmail("Sriraksha@gmail.com");
+        userobj.setPassword("123456");
+        System.out.println(userobj.getemail() + " " + user.password());
+	}}
+
+

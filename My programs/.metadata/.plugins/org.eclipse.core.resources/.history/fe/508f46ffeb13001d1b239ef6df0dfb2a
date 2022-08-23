@@ -1,0 +1,21 @@
+package intrface;
+interface ll{
+	void show();
+	void display();
+}
+
+public class IterfceDemo implements ll{ 
+	// Interface keyword is implements ll
+	public void show() {
+		System.out.println("msg from show()");
+	}
+public void display() {
+	System.out.println("msg from display()");
+}
+public static void main(String[] args) {
+	
+	IterfceDemo obj = new IterfceDemo();
+    obj.show();
+    obj.display();
+    }
+}

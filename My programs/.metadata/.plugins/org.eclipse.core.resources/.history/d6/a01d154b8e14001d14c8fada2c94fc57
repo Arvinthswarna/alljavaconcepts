@@ -1,0 +1,18 @@
+package exceptions;
+
+public class ExceptionDemo4 {
+	public static void main(String[] args) {
+		String msg = ("Welcome to chennai");
+	               //0123456789
+		System.out.println(msg.length());
+		System.out.println(msg.charAt(3));
+		System.out.println(msg.charAt(5));
+		System.out.println(msg.charAt(8));
+		try {
+		System.out.println(msg.charAt(23));
+		}catch(Exception ex) {
+			System.out.println("Exception handled");
+			ex.printStackTrace();
+		}
+	}
+}

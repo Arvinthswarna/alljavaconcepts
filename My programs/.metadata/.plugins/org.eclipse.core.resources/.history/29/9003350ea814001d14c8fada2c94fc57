@@ -1,0 +1,25 @@
+package exceptions;
+
+public class ExceptionDemo9 {
+	static void validate(int value) throws ArithmeticException{
+		if(value == 0) {
+			throw new ArithmeticException("my exception thrown");
+		}
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int num1 = 10;
+		int num2 = 1;
+		int res;
+        try {
+        	validate(num2);
+        	res = num1/num2;
+        	System.out.println(res);
+        }
+        catch(ArithmeticException ex) {
+        	System.out.println(ex);
+        }
+	}
+
+}

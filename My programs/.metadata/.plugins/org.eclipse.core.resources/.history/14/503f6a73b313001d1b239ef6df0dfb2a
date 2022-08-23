@@ -1,0 +1,27 @@
+package inheritance;
+
+class Vehicle{
+	int speed = 100;
+	Vehicle(){
+		System.out.println("Vehicle Constructor");
+	}
+	void running() {
+		System.out.println("Vehicle running at : " + speed + "/hr");
+		
+	}
+}
+class Bike extends Vehicle{
+	Bike(){
+		super();
+		System.out.println(super.speed);
+		super.running();
+	}
+}
+
+public class InheritDemo4 {
+	public static void main(String[] args) {
+		
+		new Bike();
+	}
+
+}

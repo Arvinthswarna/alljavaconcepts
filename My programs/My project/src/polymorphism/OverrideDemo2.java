@@ -1,0 +1,24 @@
+package polymorphism;
+class Product{
+	int pqty = 2;
+	void calculate(int mrp) {
+		int res = pqty * mrp;
+		System.out.println(" amount is : " + res);
+		}
+}
+class Payment extends Product {
+	void calculate(int mrp) {
+		int res = pqty * mrp;
+		System.out.println("Payment class - Amount is : " + res);
+	}
+	}
+
+public class OverrideDemo2 {
+public static void main(String[] args) {
+	Payment p1 = new Payment();
+	p1.calculate(200);
+	
+	Product p2 = new Product();
+	p2.calculate(4);
+}
+}

@@ -1,0 +1,12 @@
+package intrface;
+interface Shape{
+	abstract void circle();
+	void square();
+}
+interface Line{
+	void drawline();
+}
+
+public class IterfceDemo1 {
+
+}

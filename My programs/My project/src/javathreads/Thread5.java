@@ -1,0 +1,28 @@
+package javathreads;
+
+public class Thread5 extends Thread {
+	public void run() {
+		System.out.println("running...");
+	}
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+    Thread5 tobj1 = new Thread5();
+    Thread5 tobj2 = new Thread5();
+    Thread5 tobj3 = new Thread5();
+    
+    System.out.println(tobj1.getPriority());
+    System.out.println(tobj2.getPriority());
+    System.out.println(tobj3.getPriority());
+    
+           tobj1.setPriority(6);
+           tobj2.setPriority(7);
+           tobj3.setPriority(8);
+    System.out.println("=============");
+    System.out.println(tobj1.getPriority());
+    System.out.println(tobj2.getPriority());
+    System.out.println(tobj3.getPriority());
+    
+	}
+
+}

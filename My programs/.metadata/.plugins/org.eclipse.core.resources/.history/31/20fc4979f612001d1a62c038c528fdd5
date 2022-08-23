@@ -1,0 +1,14 @@
+package com.example;
+
+import accessmodifiers.*;
+
+
+public class Test33 extends Test3 {
+	
+	public static void main(String[] args) {
+		
+		Test33 obj = new Test33();
+		System.out.println(obj.num);
+	
+	}
+	}

@@ -1,0 +1,39 @@
+package inheritance;
+class A1{
+	int x = 20;
+	int y = 30;
+
+}
+class B1 extends A1{
+	int res;
+	void product() {
+		res = x * y;
+		System.out.println("product of two numbers : " + res);
+		
+	}
+	
+}
+class C1 extends A1{
+	int res;
+	void addition() {
+		res = x + y;
+		System.out.println("Addition of two numbers are: " + res);
+		
+	}
+}
+class D1 extends C1{
+	//class D1 extends C1
+	void display() {
+		System.out.println("Welcome to chennai");
+		
+	}
+}
+public class InheritDemo3 {
+	public static void main(String[] args) {
+		D1 obj = new D1();
+		obj.display();
+		//obj.product();
+		obj.addition();
+	}
+
+}

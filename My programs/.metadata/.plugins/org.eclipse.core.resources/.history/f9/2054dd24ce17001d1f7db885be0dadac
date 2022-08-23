@@ -1,0 +1,21 @@
+package datastructures;
+
+import java.util.*;
+public class Test8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LinkedHashSet<String> set = new LinkedHashSet<String>();
+		set.add("Alex");
+		set.add("John");
+		set.add("Jimmy");
+		set.add("Julie");
+		
+		Iterator it1 = set.iterator();
+		
+		while(it1.hasNext()) {
+			System.out.println(it1.next());
+		}
+	}
+
+}

@@ -1,0 +1,35 @@
+package datastructures;
+
+import java.util.*;
+
+public class Test5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		PriorityQueue<String> que = new PriorityQueue<String>();
+		que.add("Alex");
+		que.add("Bob");
+		que.add("June");
+		que.add("Jack");
+		que.add("Zoe");
+		
+		
+		
+		Iterator it1 = que.iterator();
+		
+		while(it1.hasNext()) {
+			System.out.println(it1.next());
+		}
+		
+		que.remove();
+		que.poll();
+		
+		System.out.println("===============================");
+		Iterator it2 = que.iterator();
+		while(it2.hasNext()) {
+			System.out.println(it2.next());
+		}
+		
+		
+	}}
+

@@ -1,0 +1,25 @@
+package accessmodifiers;
+
+ 
+	class A{
+		 int number = 200;
+		
+		 void display() {
+			System.out.println("Value is : " + number);
+		}
+		}
+
+
+ class Test2 {
+
+		public static void main(String[] args) {
+			// TODO Auto-generated method stub
+			A obj = new A();
+			obj.display();
+			
+
+		}
+
+
+
+	}

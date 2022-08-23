@@ -1,0 +1,26 @@
+package inheritance;
+
+class A{
+	int x = 20;
+	
+}
+class B extends A{
+	int y = 30;
+	
+}
+class C extends B{
+	int z = 40;
+	int res;
+	void add() {
+		res = x + y + z;
+System.out.println("Sum Value is : " + res);
+}
+}
+
+public class InheritDemo2 {
+	public static void main(String[] args) {
+		C obj = new obj();
+		obj.add();
+	}
+
+}
